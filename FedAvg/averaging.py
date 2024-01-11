@@ -138,8 +138,7 @@ def reweight_algorithm_restricted(y, LAMBDA, thresh):
     reshaped_std = torch.t(reweight_std.repeat(num_models, 1))
     reweight_regulized = reweight * reshaped_std  # reweight confidence by its standard deviation
 
-    restricted_y = y * (reweight >= thresh).type(torch.cuda.FloatTensor) + line_y * (reweight < thresh).type(
-        torch.cuda.FloatTensor)
+    restricted_y = y * (reweight >= thresh) + line_y * (reweight < thresh)
     return reweight_regulized, restricted_y
 
 

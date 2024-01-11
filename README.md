@@ -1,5 +1,6 @@
 # Attack-Resistant Federated Learning with Residual-based Reweighting
 
+`python main_nn.py --model smallcnn --epochs 10 --gpu -1 --iid 0 --fix_total --frac 0.1 --num_attackers 4 --attacker_ep 10 --num_users 100 --attack_label 1 --agg irls`
 
 This repository is implemented by [Shuhao Fu](https://github.com/howardmumu) and [Chulin Xie](https://github.com/AlphaPav).
 
