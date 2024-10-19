@@ -102,3 +102,9 @@ CIFAR-10
 ```
 python main_nn.py --model resnet --dataset cifar --num_channels 3 --epochs 200 --local_bs 64 --num_attackers 1 --attacker_ep 10 --num_users 9 --is_backdoor true
 ```
+
+---
+
+`FedAvg.Update.LocalUpdate.update_weights`
+
+`FedAvg.Update.LocalUpdate.update_gradients`
